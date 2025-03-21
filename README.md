@@ -13,9 +13,9 @@ A aplicação trata-se de uma ferramenta Android/web desenvolvida em TypeScript 
 
 O projeto é construído em torno do React Native pelo framework de desenvolvimento Expo (https://docs.expo.dev/). Foi usado a opção "Blank (TypeScript)" do comando:
 
-```bash
-npx create-expo-app@latest --template
-```
+    ```bash
+    npx create-expo-app@latest --template
+    ```
 
 ### Bibliotecas e pacotes iniciais
 
@@ -67,17 +67,18 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ │ ├── ° useTheme.ts
     │ │ └── ° useFetch.ts
     │ ├── 📂 navigation/ # Navegação (React Navigation)
-    │ │ ├── ° RootNavigator.tsx
+    │ │ ├── RootNavigator.tsx
     │ │ ├── ° AppTabs.tsx
     │ │ ├── ° AuthStack.tsx
     │ │ └── ° linking.ts
     │ ├── 📂 screens/ # Telas da aplicação
-    │ │ ├── ° HomeScreen.tsx
+    │ │ ├── SettingsScreen.tsx
+    │ │ ├── TestScreen.tsx
     │ │ ├── ° ProfileScreen.tsx
     │ │ ├── ° GameDetailsScreen.tsx
     │ │ ├── ° LoginScreen.tsx
     │ │ ├── ° RegisterScreen.tsx
-    │ │ └── SettingsScreen.tsx
+    │ │ └── ° HomeScreen.tsx
     │ ├── 📂 ° store/ # Zustand para gerenciamento de estado
     │ │ ├── ° useSettingsStore.ts
     │ │ ├── ° useAuthStore.ts
@@ -104,7 +105,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ └── ° env.ts # Configuração de variáveis de ambiente
     ├── ° .env/ # Variáveis de ambiente
     ├── .gitignore
-    ├── ° .prettierignore
+    ├── .editconfig (funciona com a extensão "EditorConfig for VS Code")
     ├── index.ts # Ponto de entrada
     ├── app.json # Configuração do Expo
     ├── babel.config.js # Configuração do Babel
@@ -152,15 +153,15 @@ Abaixo, a lista das bibliotecas e dependências instaladas ao longo do desenvolv
 
   (Runtime necessário para o Expo)
 
-  ### Navegação
+### Navegação
 
-  - React Navigation:
+- React Navigation:
 
-  ```bash
-  npm install @react-navigation/native
-  ```
+```bash
+npm install @react-navigation/native
+```
 
-  (Biblioteca de navegação para React Native)
+(Biblioteca de navegação para React Native)
 
 - React Navigation Stack:
 
@@ -186,7 +187,7 @@ Abaixo, a lista das bibliotecas e dependências instaladas ao longo do desenvolv
 
   (Suporte para navegação em gaveta)
 
-  ### Componentes e Utilitários
+### Componentes e Utilitários
 
 - React Native Screens:
 
@@ -234,4 +235,12 @@ Abaixo, a lista das bibliotecas e dependências instaladas ao longo do desenvolv
 
   ```bash
   npm install --save-dev babel-plugin-module-resolver
+  ```
+
+### Dependências de desenvolvimento
+
+- Prettier
+
+  ```bash
+  npm install prettier --save-dev
   ```
