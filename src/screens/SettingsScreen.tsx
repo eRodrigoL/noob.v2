@@ -16,8 +16,12 @@ export default function SettingsScreen({ navigation }: Props) {
       {/* texto */}
       <Text>Tamanho da fonte</Text>
       {/* Botões de aumentar/diminuir fonte */}
-      <TouchableOpacity onPress={() => {}}>A-</TouchableOpacity>
-      <TouchableOpacity onPress={() => {}}>A+</TouchableOpacity>
+      <TouchableOpacity onPress={() => {}}>
+        <Text>A-</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => {}}>
+        <Text>A+</Text>
+      </TouchableOpacity>
 
       {/* subtítulo */}
       <Text>Cores</Text>
