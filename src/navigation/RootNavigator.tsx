@@ -15,7 +15,10 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function RootNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Tela1">
+      <Stack.Navigator
+        initialRouteName="Tela1"
+        screenOptions={{ headerShown: false }}
+      >
         <Stack.Screen name="Tela1" component={TestScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
       </Stack.Navigator>
