@@ -151,3 +151,79 @@ Abaixo, a lista das bibliotecas e dependências instaladas ao longo do desenvolv
   ```
 
   (Runtime necessário para o Expo)
+
+  ### Navegação
+
+  - React Navigation:
+
+  ```bash
+  npm install @react-navigation/native
+  ```
+
+  (Biblioteca de navegação para React Native)
+
+- React Navigation Stack:
+
+  ```bash
+  npm install @react-navigation/native-stack
+  ```
+
+  (Suporte para navegação em pilha)
+
+- React Navigation Bottom Tabs:
+
+  ```bash
+  npm install @react-navigation/bottom-tabs
+  ```
+
+  (Suporte para abas inferiores)
+
+- React Navigation Drawer:
+
+  ```bash
+  npm install @react-navigation/drawer
+  ```
+
+  (Suporte para navegação em gaveta)
+
+  ### Componentes e Utilitários
+
+- React Native Screens:
+
+  ```bash
+  npm install react-native-screens
+  ```
+
+  (Biblioteca para melhorar a performance de telas)
+
+- React Native Safe Area Context:
+
+  ```bash
+  npm install react-native-safe-area-context
+  ```
+
+  (Biblioteca para lidar com áreas seguras em dispositivos)
+
+- React Native Gesture Handler:
+
+  ```bash
+  npm install react-native-gesture-handler
+  ```
+
+  (Biblioteca para lidar com gestos)
+
+- React Native Reanimated:
+
+  ```bash
+  npm install react-native-reanimated
+  ```
+
+  (Biblioteca para animações avançadas)
+
+- React Native Masked View:
+
+  ```bash
+  npm install @react-native-masked-view/masked-view
+  ```
+
+  (Biblioteca para máscaras visuais)
