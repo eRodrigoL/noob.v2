@@ -6,7 +6,7 @@ import SettingsScreen from "@screens/SettingsScreen";
 import TestScreen from "@screens/TestScreen";
 
 export type RootStackParamList = {
-  Tela1: undefined;
+  TestScreen: undefined;
   Settings: undefined;
 };
 
@@ -16,10 +16,10 @@ export default function RootNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Tela1"
+        initialRouteName="TestScreen"
         screenOptions={{ headerShown: false }}
       >
-        <Stack.Screen name="Tela1" component={TestScreen} />
+        <Stack.Screen name="TestScreen" component={TestScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
       </Stack.Navigator>
     </NavigationContainer>

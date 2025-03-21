@@ -3,9 +3,9 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
 
-type Props = NativeStackScreenProps<RootStackParamList, "Tela1">;
+type Props = NativeStackScreenProps<RootStackParamList, "TestScreen">;
 
-export default function ScreenTest({ navigation }: Props) {
+export default function TestScreen({ navigation }: Props) {
   return (
     <View>
       {/* titulo */}
