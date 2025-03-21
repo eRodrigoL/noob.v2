@@ -46,13 +46,13 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ ├── ° fonts/
     │ ├── ° icons/
     │ └── ° lottie/
-    ├── 📂 ° src/
+    ├── 📂 src/
     │ ├── 📂 ° api/ # Comunicação com APIs
     │ │ ├── ° apiClient.ts
     │ │ ├── ° auth.ts
     │ │ ├── ° users.ts
     │ │ └── ° games.ts
-    │ ├── 📂 ° components/ # Componentes reutilizáveis
+    │ ├── 📂 components/ # Componentes reutilizáveis
     │ │ ├── ° FontSizeButtons.tsx
     │ │ ├── ° Button.tsx
     │ │ ├── ° Card.tsx
@@ -66,12 +66,12 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ │ ├── ° useGames.ts
     │ │ ├── ° useTheme.ts
     │ │ └── ° useFetch.ts
-    │ ├── 📂 ° navigation/ # Navegação (React Navigation)
+    │ ├── 📂 navigation/ # Navegação (React Navigation)
     │ │ ├── ° RootNavigator.tsx
     │ │ ├── ° AppTabs.tsx
     │ │ ├── ° AuthStack.tsx
     │ │ └── ° linking.ts
-    │ ├── 📂 ° screens/ # Telas da aplicação
+    │ ├── 📂 screens/ # Telas da aplicação
     │ │ ├── ° HomeScreen.tsx
     │ │ ├── ° ProfileScreen.tsx
     │ │ ├── ° GameDetailsScreen.tsx
@@ -84,7 +84,12 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ │ ├── ° useThemeStore.ts
     │ │ ├── ° useGameStore.ts
     │ │ └── ° index.ts
-    │ ├── 📂 ° theme/ # Tema (cores, fontes)
+    ├── 📂 tests/ # Testes unitários e de integração
+    │ ├── ° components/
+    │ ├── ° hooks/
+    │ ├── ° screens/
+    │ └── ° api/
+    │ ├── 📂 theme/ # Tema (cores, fontes)
     │ │ ├── colors.ts
     │ │ ├── fonts.ts
     │ │ ├── ° spacing.ts
@@ -97,11 +102,6 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │ ├── App.tsx # Arquivo principal
     │ ├── ° types.ts # Definição de tipos
     │ └── ° env.ts # Configuração de variáveis de ambiente
-    ├── 📂 ° tests/ # Testes unitários e de integração
-    │ ├── ° components/
-    │ ├── ° hooks/
-    │ ├── ° screens/
-    │ └── ° api/
     ├── ° .env/ # Variáveis de ambiente
     ├── .gitignore
     ├── ° .prettierignore
