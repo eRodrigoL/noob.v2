@@ -227,3 +227,11 @@ Abaixo, a lista das bibliotecas e dependências instaladas ao longo do desenvolv
   ```
 
   (Biblioteca para máscaras visuais)
+
+### Plugin Babel
+
+- Module Resolver
+
+  ```bash
+  npm install --save-dev babel-plugin-module-resolver
+  ```

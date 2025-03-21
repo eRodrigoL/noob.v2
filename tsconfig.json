@@ -1,6 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    // Configuração do caminho base para os imports
+    "baseUrl": "./src",
+    // Definição dos aliases de caminho
+    "paths": {
+      // Alias para a pasta de telas
+      "@/*": ["./*"],
+      "@screens/*": ["screens/*"]
+    }
   }
 }
