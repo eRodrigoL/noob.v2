@@ -2,7 +2,7 @@
 
 A estrutura do projeto é dividida em pastas que representam diferentes categorias de funcionalidades e recursos. Essa organização ajuda a manter o projeto escalável e facilita a compreensão do código por outros desenvolvedores.
 
-    (° = ainda não criado)
+    ([x] = arquivos e pastas já presentes na aplicação)
     📦 noob.v2/
     ├── 📂 [ ] assets/ # Imagens, ícones, fontes, etc.
     │   ├── 📂 [ ] fonts/ # arquivos de fontes
@@ -20,7 +20,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     ├── 📂 [x] docs/ # documentação.
     │   ├── [x] dependenciesList.md
     │   └── [x] folderTree.md
-    ├── 📂 [ ] src/
+    ├── 📂 [x] src/
     │   ├── 📂 [ ] api/ # Comunicação com APIs
     │   │   ├── [ ] apiClient.ts
     │   │   ├── [ ] auth.ts
