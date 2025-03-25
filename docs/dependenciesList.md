@@ -104,8 +104,16 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 ### Plugin Babel
 
-- Module Resolver
+- 13. Module Resolver
 
   ```bash
   npm install --save-dev babel-plugin-module-resolver
+  ```
+
+### Dependências de desenvolvimento
+
+- 14. Prettier
+
+  ```bash
+  npm install prettier --save-dev
   ```

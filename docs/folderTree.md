@@ -18,7 +18,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   │   └── [ ] icon.png
     │   │   ├── 📂 [ ] lottie/
     ├── 📂 [x] docs/ # documentação.
-    │   ├── [ ] dependenciesList.md
+    │   ├── [x] dependenciesList.md
     │   └── [x] folderTree.md
     ├── 📂 [ ] src/
     │   ├── 📂 [ ] api/ # Comunicação com APIs
@@ -88,7 +88,8 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   ├── [ ] types.ts # Definição de tipos
     │   └── [ ] env.ts # Configuração de variáveis de ambiente
     ├── [x] .gitignore
-    ├── [ ] .editconfig (funciona com a extensão "EditorConfig for VS Code")
+    ├── [x] .editconfig (funciona com a extensão "EditorConfig for VS Code")
+    ├── [x] .prettierignore
     ├── [x] app.json # Configuração do Expo
     ├── [x] App.tsx # Arquivo principal
     ├── [x] babel.config.js # Configuração do Babel
