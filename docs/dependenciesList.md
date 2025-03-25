@@ -27,3 +27,77 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
   ```
 
   (Runtime necessário para o Expo)
+
+### Navegação
+
+- 4. React Navigation:
+
+  ```bash
+  npm install @react-navigation/native
+  ```
+
+(Biblioteca de navegação para React Native)
+
+- 5. React Navigation Stack:
+
+  ```bash
+  npm install @react-navigation/native-stack
+  ```
+
+  (Suporte para navegação em pilha)
+
+- 6. React Navigation Bottom Tabs:
+
+  ```bash
+  npm install @react-navigation/bottom-tabs
+  ```
+
+  (Suporte para abas inferiores)
+
+- 7. React Navigation Drawer:
+
+  ```bash
+  npm install @react-navigation/drawer
+  ```
+
+  (Suporte para navegação em gaveta)
+
+- 8. React Native Screens:
+
+  ```bash
+  npm install react-native-screens
+  ```
+
+  (Biblioteca para melhorar a performance de telas)
+
+- 9. React Native Safe Area Context:
+
+  ```bash
+  npm install react-native-safe-area-context
+  ```
+
+  (Biblioteca para lidar com áreas seguras em dispositivos)
+
+- 10. React Native Gesture Handler:
+
+  ```bash
+  npm install react-native-gesture-handler
+  ```
+
+  (Biblioteca para lidar com gestos)
+
+- 11. React Native Reanimated:
+
+  ```bash
+  npm install react-native-reanimated
+  ```
+
+  (Biblioteca para animações avançadas)
+
+- 12. React Native Masked View:
+
+  ```bash
+  npm install @react-native-masked-view/masked-view
+  ```
+
+  (Biblioteca para máscaras visuais)
