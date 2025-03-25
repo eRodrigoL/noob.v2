@@ -91,7 +91,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     ├── [ ] .editconfig (funciona com a extensão "EditorConfig for VS Code")
     ├── [x] app.json # Configuração do Expo
     ├── [x] App.tsx # Arquivo principal
-    ├── [ ] babel.config.js # Configuração do Babel
+    ├── [x] babel.config.js # Configuração do Babel
     ├── [x] index.ts # Ponto de entrada
     ├── [x] package.json
     ├── [x] README.md

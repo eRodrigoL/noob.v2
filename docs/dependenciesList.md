@@ -101,3 +101,11 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
   ```
 
   (Biblioteca para máscaras visuais)
+
+### Plugin Babel
+
+- Module Resolver
+
+  ```bash
+  npm install --save-dev babel-plugin-module-resolver
+  ```
