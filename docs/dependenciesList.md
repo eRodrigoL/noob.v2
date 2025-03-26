@@ -30,7 +30,7 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 ### Navegação
 
-- 4. React Navigation:
+- 4. React Navigation Native:
 
   ```bash
   npm install @react-navigation/native
@@ -38,7 +38,7 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 (Biblioteca de navegação para React Native)
 
-- 5. React Navigation Stack:
+- 5. React Navigation Native Stack:
 
   ```bash
   npm install @react-navigation/native-stack
@@ -104,16 +104,28 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 ### Plugin Babel
 
-- 13. Module Resolver
+- 13. Babel Plugin Module Resolver
 
   ```bash
   npm install --save-dev babel-plugin-module-resolver
   ```
 
-### Dependências de desenvolvimento
+  (Plugin para caminhos absolutos nas importações)
+
+### Dependências de desenvolvimento e ferramentas adicionais
 
 - 14. Prettier
 
   ```bash
   npm install prettier --save-dev
   ```
+
+  (Ferramenta para formatação automática de código)
+
+- 15. React Native Dropdown Select List
+
+  ```bash
+  npm install prettier --save-dev
+  ```
+
+  (Dropdown estilizado para React Native)
