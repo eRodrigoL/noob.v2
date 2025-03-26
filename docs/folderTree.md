@@ -42,12 +42,12 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] useGames.ts
     │   │   ├── [ ] useFetch.ts
     │   │   └── [ ] useTheme.ts
-    │   ├── 📂 [ ] navigation/ # Navegação (React Navigation)
-    │   │   ├── [ ] RootNavigator.tsx
+    │   ├── 📂 [x] navigation/ # Navegação (React Navigation)
+    │   │   ├── [x] RootNavigator.tsx
     │   │   ├── [ ] AppTabs.tsx
     │   │   ├── [ ] AuthStack.tsx
     │   │   └── [ ] linking.ts
-    │   ├── 📂 [ ] screens/ # Telas da aplicação
+    │   ├── 📂 [x] screens/ # Telas da aplicação
     │   │   ├── 📂 [ ] boardgame/
     │   │   │   ├── [ ] EditGame.tsx
     │   │   │   ├── [ ] List.tsx
@@ -61,8 +61,8 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   │   ├── [ ] Login.tsx
     │   │   │   ├── [ ] RegisterUser.tsx
     │   │   │   └── [ ] UserProfile.tsx
-    │   │   ├── [ ] SettingsScreen.tsx
-    │   │   ├── [ ] TestScreen.tsx
+    │   │   ├── [x] SettingsScreen.tsx
+    │   │   ├── [x] TestScreen.tsx
     │   ├── 📂 [ ] services/
     │   ├── 📂 [ ] store/ # Zustand para gerenciamento de estado
     │   │   ├── [ ] useSettingsStore.ts
@@ -75,9 +75,10 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── 📂 [ ] hooks/
     │   │   ├── 📂 [ ] screens/
     │   │   └── 📂 [ ] api/
-    │   ├── 📂 [ ] theme/ # Tema (cores, fontes)
-    │   │   ├── [ ] theme.ts
-    │   │   ├── [ ] typography.ts
+    │   ├── 📂 [x] theme/ # Tema (cores, fontes)
+    │   │   ├── [x] globalStyles.ts
+    │   │   ├── [x] theme.ts
+    │   │   ├── [x] typography.ts
     │   │   ├── [ ] spacing.ts
     │   │   └── [ ] index.ts
     │   ├── 📂 [ ] utils/ # Utilitários e helpers
