@@ -104,7 +104,7 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 ### Plugin Babel
 
-- 13. Babel Plugin Module Resolver
+- 13. Babel Plugin Module Resolver:
 
   ```bash
   npm install --save-dev babel-plugin-module-resolver
@@ -114,7 +114,7 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
 ### Dependências de desenvolvimento e ferramentas adicionais
 
-- 14. Prettier
+- 14. Prettier:
 
   ```bash
   npm install prettier --save-dev
@@ -122,10 +122,34 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
   (Ferramenta para formatação automática de código)
 
-- 15. React Native Dropdown Select List
+- 15. React Native Dropdown Select List:
 
   ```bash
   npm install prettier --save-dev
   ```
 
   (Dropdown estilizado para React Native)
+
+- 16. Zustand:
+
+  ```bash
+  npm install zustand
+  ```
+
+  (Biblioteca de gerenciamento de estado leve e escalável para React.)
+
+- 17. Async Storage:
+
+  ```bash
+  npm install @react-native-async-storage/async-storage
+  ```
+
+  (Armazenamento persistente de dados em dispositivos móveis.)
+
+- 99. Nome:
+
+  ```bash
+  código
+  ```
+
+  (Descrição)
