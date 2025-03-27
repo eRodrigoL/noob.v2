@@ -19,9 +19,11 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── 📂 [ ] icons/
     │   │   │   └── [ ] icon.png
     │   │   ├── 📂 [ ] lottie/
-    ├── 📂 [x] docs/ # documentação.
-    │   ├── [x] dependenciesList.md
-    │   └── [x] folderTree.md
+    ├── 📂 [x] documentation/ # documentação.
+    │   │   ├── 📂 [ ] docs/
+    │   │   │   ├── [x] dependenciesList.md
+    │   │   │   └── [x] folderTree.md
+    │   │   └── [x] index.ms
     ├── 📂 [x] src/
     │   ├── 📂 [ ] api/ # Comunicação com APIs
     │   │   ├── [ ] apiClient.ts
@@ -39,7 +41,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] ParallaxProfile.tsx
     │   │   ├── [ ] SandwichMenu.tsx
     │   │   └── [ ] ThemeToggle.tsx
-    │   ├── 📂 [ ] hooks/ # Hooks personalizados
+    │   ├── 📂 [x] hooks/ # Hooks personalizados
     │   │   ├── [ ] useAuth.ts
     │   │   ├── [ ] useGames.ts
     │   │   ├── [ ] useFetch.ts
@@ -66,8 +68,8 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [x] SettingsScreen.tsx
     │   │   ├── [x] TestScreen.tsx
     │   ├── 📂 [ ] services/
-    │   ├── 📂 [ ] store/ # Zustand para gerenciamento de estado
-    │   │   ├── [ ] useSettingsStore.ts
+    │   ├── 📂 [x] store/ # Zustand para gerenciamento de estado
+    │   │   ├── [x] useSettingsStore.ts
     │   │   ├── [ ] useAuthStore.ts
     │   │   ├── [ ] useThemeStore.ts
     │   │   ├── [ ] useGameStore.ts
