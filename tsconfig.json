@@ -6,7 +6,7 @@
     "baseUrl": "./src",
     // Definição dos aliases de caminho
     "paths": {
-      // Alias para a pasta de telas
+      // Alias: aliases servem como encurtadores de rotas a partir da raiz do aplicativo
       "@/*": ["./*"],
       "@screens/*": ["screens/*"]
     }

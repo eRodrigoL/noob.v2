@@ -85,16 +85,17 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] formatDate.ts
     │   │   ├── [ ] storage.ts
     │   │   ├── [ ] validators.ts
-    │   │   └── [ ] constants.ts
+    │   │   └── [ ] constants.ts    
+    │   ├── [x] App.tsx # Arquivo principal
     │   ├── [ ] types.ts # Definição de tipos
     │   └── [ ] env.ts # Configuração de variáveis de ambiente
     ├── [x] .gitignore
-    ├── [x] .editconfig (funciona com a extensão "EditorConfig for VS Code")
+    ├── [x] .editconfig
     ├── [x] .prettierignore
     ├── [x] app.json # Configuração do Expo
-    ├── [x] App.tsx # Arquivo principal
     ├── [x] babel.config.js # Configuração do Babel
     ├── [x] index.ts # Ponto de entrada
+    ├── [x] package-lock.json
     ├── [x] package.json
     ├── [x] README.md
     └── [x] tsconfig.json # Configuração do TypeScript
