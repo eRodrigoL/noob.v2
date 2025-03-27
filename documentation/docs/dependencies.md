@@ -1,3 +1,5 @@
+### [← Voltar (Índice)](../index.md)
+
 # Dependências
 
 Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, plugins e afins utilizados ao longo do desenvolvimento (categorizados em agrupamentos e identificada a ordem de instalação).
@@ -153,3 +155,5 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
   ```
 
   (Descrição)
+
+### [← Voltar (Índice)](../index.md)

@@ -15,3 +15,5 @@ A aplicação trata-se de uma ferramenta Android/web desenvolvida em React Nativ
   ```bash
   npx create-expo-app@latest --template
   ```
+
+#### Confira [aqui](./documentation/index.md) a documentação completa
