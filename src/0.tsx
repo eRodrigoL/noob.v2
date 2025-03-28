@@ -5,8 +5,8 @@ import { StyleSheet } from "react-native";
 const globalStyles = StyleSheet.create({
   // Estilo para o container principal
   container: {
-    flex: 1, // Ocupa todo o espaço disponível na tela
-    padding: 20, // Adiciona um preenchimento interno de 20 unidades em todos os lados
+    flex: 1,
+    padding: 25, // Adiciona um preenchimento interno de 20 unidades em todos os lados
   },
 
   // Estilo para botões
