@@ -1,3 +1,5 @@
+### [← Voltar (Índice)](../index.md)
+
 # Arquitetura De Pastas
 
 A estrutura do projeto é dividida em pastas que representam diferentes categorias de funcionalidades e recursos. Essa organização ajuda a manter o projeto escalável e facilita a compreensão do código por outros desenvolvedores.
@@ -17,9 +19,11 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── 📂 [ ] icons/
     │   │   │   └── [ ] icon.png
     │   │   ├── 📂 [ ] lottie/
-    ├── 📂 [x] docs/ # documentação.
-    │   ├── [x] dependenciesList.md
-    │   └── [x] folderTree.md
+    ├── 📂 [x] documentation/ # documentação.
+    │   │   ├── 📂 [ ] docs/
+    │   │   │   ├── [x] dependenciesList.md
+    │   │   │   └── [x] folderTree.md
+    │   │   └── [x] index.ms
     ├── 📂 [x] src/
     │   ├── 📂 [ ] api/ # Comunicação com APIs
     │   │   ├── [ ] apiClient.ts
@@ -37,7 +41,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] ParallaxProfile.tsx
     │   │   ├── [ ] SandwichMenu.tsx
     │   │   └── [ ] ThemeToggle.tsx
-    │   ├── 📂 [ ] hooks/ # Hooks personalizados
+    │   ├── 📂 [x] hooks/ # Hooks personalizados
     │   │   ├── [ ] useAuth.ts
     │   │   ├── [ ] useGames.ts
     │   │   ├── [ ] useFetch.ts
@@ -64,8 +68,8 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [x] SettingsScreen.tsx
     │   │   ├── [x] TestScreen.tsx
     │   ├── 📂 [ ] services/
-    │   ├── 📂 [ ] store/ # Zustand para gerenciamento de estado
-    │   │   ├── [ ] useSettingsStore.ts
+    │   ├── 📂 [x] store/ # Zustand para gerenciamento de estado
+    │   │   ├── [x] useSettingsStore.ts
     │   │   ├── [ ] useAuthStore.ts
     │   │   ├── [ ] useThemeStore.ts
     │   │   ├── [ ] useGameStore.ts
@@ -85,16 +89,17 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] formatDate.ts
     │   │   ├── [ ] storage.ts
     │   │   ├── [ ] validators.ts
-    │   │   └── [ ] constants.ts
+    │   │   └── [ ] constants.ts    
+    │   ├── [x] App.tsx # Arquivo principal
     │   ├── [ ] types.ts # Definição de tipos
     │   └── [ ] env.ts # Configuração de variáveis de ambiente
     ├── [x] .gitignore
-    ├── [x] .editconfig (funciona com a extensão "EditorConfig for VS Code")
+    ├── [x] .editconfig
     ├── [x] .prettierignore
     ├── [x] app.json # Configuração do Expo
-    ├── [x] App.tsx # Arquivo principal
     ├── [x] babel.config.js # Configuração do Babel
     ├── [x] index.ts # Ponto de entrada
+    ├── [x] package-lock.json
     ├── [x] package.json
     ├── [x] README.md
     └── [x] tsconfig.json # Configuração do TypeScript
@@ -108,3 +113,5 @@ A árvore de pastas acima contém nome geréricos de arquivos quando se trata do
 - Manutenção: A organização facilita a manutenção e atualização do código.
 
 - Colaboração: Outros desenvolvedores podem rapidamente entender a estrutura do projeto.
+
+### [← Voltar (Índice)](../index.md)

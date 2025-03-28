@@ -1,5 +1,10 @@
+# Define que este é o arquivo raiz de configuração do EditorConfig
 root = true
- 
- *
- indent_style = space
- indent_size = 2
+
+# Configurações padrão para todos os arquivos
+[*]
+# Define o estilo de indentação como espaços (em vez de tabulação)
+indent_style = space
+
+# Define o tamanho da indentação como 2 espaços
+indent_size = 2
