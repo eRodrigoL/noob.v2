@@ -148,6 +148,14 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
   (Armazenamento persistente de dados em dispositivos móveis.)
 
+- 18. Expo Font:
+
+  ```bash
+  npm install expo-font
+  ```
+
+  (Para uso de fontes .ttf)
+
 - 99. Nome:
 
   ```bash

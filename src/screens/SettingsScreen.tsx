@@ -62,7 +62,7 @@ export default function SettingsScreen({ navigation }: Props) {
   const fontOptions = [
     { key: "arial", value: "Arial" },
     { key: "times", value: "Times New Roman" },
-    { key: "openSans", value: "Open Sans" },
+    { key: "roboto", value: "Roboto" },
   ];
 
   // Opções disponíveis para seleção de tema de cores
@@ -117,6 +117,16 @@ export default function SettingsScreen({ navigation }: Props) {
         defaultOption={fontOptions.find((f) => f.key === localFontFamily)}
         search={false}
         boxStyles={{ marginBottom: 20 }}
+        dropdownTextStyles={{
+          fontFamily: previewFontFamily,
+          fontSize: fontSizes.body,
+          color: previewColors.text,
+        }}
+        inputStyles={{
+          fontFamily: previewFontFamily,
+          fontSize: fontSizes.body,
+          color: previewColors.text,
+        }}
       />
 
       {/* Ajuste de Tamanho da Fonte */}
@@ -191,6 +201,16 @@ export default function SettingsScreen({ navigation }: Props) {
         defaultOption={themeOptions.find((t) => t.key === localColorScheme)}
         search={false}
         boxStyles={{ marginBottom: 20 }}
+        dropdownTextStyles={{
+          fontFamily: previewFontFamily,
+          fontSize: fontSizes.body,
+          color: previewColors.text,
+        }}
+        inputStyles={{
+          fontFamily: previewFontFamily,
+          fontSize: fontSizes.body,
+          color: previewColors.text,
+        }}
       />
 
       {/* Botões de Ação */}
