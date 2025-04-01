@@ -127,7 +127,7 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 - 15. React Native Dropdown Select List:
 
   ```bash
-  npm install prettier --save-dev
+  npm install react-native-select-dropdown
   ```
 
   (Dropdown estilizado para React Native)
