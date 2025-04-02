@@ -156,6 +156,50 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
   (Para uso de fontes .ttf)
 
+### Testes
+
+- 19. React Test Renderer:
+
+  ```bash
+  npm install --save-dev react-test-renderer@18.3.1
+  ```
+
+  (Renderiza componentes React em memória para testes)
+
+- 20. Testing Library - React Native:
+
+  ```bash
+  npm install --save-dev @testing-library/react-native
+  ```
+
+  (Permite escrever testes que simulam interações do usuário)
+
+- 21. Jest Expo:
+
+  ```bash
+  npm install --save-dev jest-expo
+  ```
+
+  (Configura automaticamente o Jest para rodar com Expo)
+
+- 22. Testing Library - Jest Native:
+
+  ```bash
+  npm install --save-dev @testing-library/jest-native
+  ```
+
+  (Acrescenta métodos úteis (matchers) para testes mais intuitivos com Jest)
+
+- 23. Types Jest:
+
+  ```bash
+  npm install --save-dev @types/jest
+  ```
+
+  (Descrição)
+
+###### exemplo
+
 - 99. Nome:
 
   ```bash
