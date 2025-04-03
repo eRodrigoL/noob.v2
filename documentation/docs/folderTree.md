@@ -6,6 +6,9 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
 
     ([x] = arquivos e pastas já presentes na aplicação)
     📦 noob.v2/
+    ├── 📂 [ ] __mocks__/
+    │   └── 📂 [ ] @react-native-async-storage/
+    │   │   ├── [ ] async-storage.ts
     ├── 📂 [ ] assets/ # Imagens, ícones, fontes, etc.
     │   ├── 📂 [ ] fonts/ # arquivos de fontes
     │   │   ├── [ ] Arial.ttf
@@ -74,10 +77,13 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] useThemeStore.ts
     │   │   ├── [ ] useGameStore.ts
     │   │   └── [ ] index.ts
-    ├── 📂 [ ] tests/ # Testes unitários e de integração
+    ├── 📂 [x] tests/ # Testes unitários e de integração
     │   │   ├── 📂 [ ] components/
     │   │   ├── 📂 [ ] hooks/
-    │   │   ├── 📂 [ ] screens/
+    │   │   ├── 📂 [x] screens/
+    │   │   │   └── [x] SettingsScreen.test.tsx
+    │   │   ├── 📂 [x] atore/
+    │   │   │   └── [x] useSettingsStore.test.ts
     │   │   └── 📂 [ ] api/
     │   ├── 📂 [x] theme/ # Tema (cores, fontes)
     │   │   ├── [x] globalStyles.ts
@@ -99,6 +105,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     ├── [x] app.json # Configuração do Expo
     ├── [x] babel.config.js # Configuração do Babel
     ├── [x] index.ts # Ponto de entrada
+    ├── [x] jest.config.js
     ├── [x] package-lock.json
     ├── [x] package.json
     ├── [x] README.md
