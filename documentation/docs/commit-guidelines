@@ -1,0 +1,83 @@
+# 📁 Padrão de Commits
+
+É excelente manter um padrão de commits para manter a organização, clareza e rastreabilidade das alterações no código.
+Eis abaixo as orientações de padronização.
+
+---
+
+## ⚠️ Observações Importantes
+
+- **Não acumule**, quanto mais frequentes forem os commits, melhor.
+- **Seja objetivo** no título, e use a lista para detalhar quando necessário.
+- **Use emojis com moderação**, apenas se desejar destacar algo importante (ex: ⚠️ para algo incompleto ou pendente).
+- Use **tempo verbal no infinitivo** (ex: "adicionar", "ajustar", "corrigir") na descrição curta.
+- Commits que envolvam múltiplas ações devem ser coesos e bem explicados.
+
+---
+
+## 🧰 Estrutura do Commit
+
+Cada commit deve seguir o formato:
+
+```bash
+<tipo>: descrição curta e objetiva
+
+- detalhe 1 (se necessário)
+- detalhe 2 (se necessário)
+```
+
+> ✅ Exemplo:
+>
+> ```
+> feat: adicionada funcionalidade de troca de tema na tela de configurações
+>
+> - integrado Zustand com componentes de tema
+> - ajustado uso de fontes dinâmicas no SelectList
+> ```
+
+---
+
+## 🎯 Tipos de Commits
+
+| Tipo       | Descrição                                                          |
+| ---------- | ------------------------------------------------------------------ |
+| `feat`     | Nova funcionalidade ou recurso                                     |
+| `fix`      | Correção de bugs                                                   |
+| `chore`    | Tarefas de manutenção (ex: adicionar fontes, atualizar deps, etc.) |
+| `docs`     | Alterações em arquivos de documentação                             |
+| `refactor` | Refatoração de código (sem alterar funcionalidade)                 |
+| `style`    | Alterações de estilo (formatação, indentação, etc.)                |
+| `test`     | Criação ou modificação de testes                                   |
+| `perf`     | Melhorias de desempenho                                            |
+| `build`    | Alterações relacionadas à build ou dependências                    |
+| `ci`       | Configurações de integração contínua                               |
+
+---
+
+## ✅ Exemplos Reais
+
+```
+feat: adicionada tela de configurações com troca de fonte e tema
+
+- criada SettingsScreen.tsx
+- integrado Zustand com seletor de tema e fonte
+```
+
+```
+fix: corrigido bug na navegação entre telas
+
+- problema ocorria ao retornar da tela de perfil
+```
+
+```
+chore: adicionadas fontes Arial e Times à pasta assets/fonts
+```
+
+```
+test: iniciada configuração de testes com jest e testing-library
+
+- criados arquivos de teste e jest.config.js
+- ajustes no tsconfig e package.json
+```
+
+---
