@@ -9,6 +9,7 @@
       // Alias: aliases servem como encurtadores de rotas a partir da raiz do aplicativo
       "@/*": ["./*"],
       "@screens/*": ["screens/*"]
-    }
+    },
+    "types": ["jest", "@testing-library/jest-native"]
   }
 }
