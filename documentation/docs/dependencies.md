@@ -198,6 +198,24 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
   (Descrição)
 
+###### API
+
+- 24. Axios:
+
+  ```bash
+  npm install axios
+  ```
+
+  (Descrição)
+
+- 25. Axios Retry:
+
+  ```bash
+  npm install axios-retry
+  ```
+
+  (Descrição)
+
 ###### exemplo
 
 - 99. Nome:
