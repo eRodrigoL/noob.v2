@@ -26,7 +26,7 @@ Este arquivo é a "fonte da verdade" para as cores. Define as paletas de cores d
 
 - **light** (tema claro padrão)
 - **dark** (tema escuro)
-- **daltonic** (tema adaptado para daltônicos)
+- **daltonic** (tema que evita tons vermelhos-puros e verdes-puros, que são os mais críticos para usuários com protanopia/deuteranopia)
 
 ### 2. `typography.ts`
 

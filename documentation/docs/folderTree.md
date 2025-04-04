@@ -33,7 +33,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] auth.ts
     │   │   ├── [ ] users.ts
     │   │   └── [ ] games.ts
-    │   ├── 📂 [ ] components/ # Componentes reutilizáveis
+    │   ├── 📂 [x] components/ # Componentes reutilizáveis
     │   │   ├── [ ] Header.tsx
     │   │   ├── [ ] Button.tsx
     │   │   ├── [ ] Card.tsx
