@@ -28,8 +28,8 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   │   └── [x] folderTree.md
     │   │   └── [x] index.ms
     ├── 📂 [x] src/
-    │   ├── 📂 [ ] api/ # Comunicação com APIs
-    │   │   ├── [ ] apiClient.ts
+    │   ├── 📂 [x] api/ # Comunicação com APIs
+    │   │   ├── [x] apiClient.ts
     │   │   ├── [ ] auth.ts
     │   │   ├── [ ] users.ts
     │   │   └── [ ] games.ts
