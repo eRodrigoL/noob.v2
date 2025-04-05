@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import globalStyles from "@/theme/globalStyles";
-import theme from "@/theme/theme";
-import typography from "@/theme/typography";
+import globalStyles from "@global";
+import theme from "@theme";
+import typography from "@typography";
 import { SelectList } from "react-native-dropdown-select-list";
 import { useSettingsStore } from "@/store/useSettingsStore";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@useTheme";
 
 // Define o tipo das props do componente
 type Props = NativeStackScreenProps<RootStackParamList, "SettingsScreen">;

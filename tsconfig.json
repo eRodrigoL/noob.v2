@@ -7,8 +7,22 @@
     // Definição dos aliases de caminho
     "paths": {
       // Alias: aliases servem como encurtadores de rotas a partir da raiz do aplicativo
+
+      // Raiz
       "@/*": ["./*"],
-      "@screens/*": ["screens/*"]
+
+      // Telas
+      "@screens/*": ["screens/*"],
+
+      // Componentes
+      "@components/*": ["components/*"],
+
+      // Estilos
+      "@global": ["theme/globalStyles.ts"],
+      "@theme": ["theme/theme.ts"],
+      "@typography": ["theme/typography.ts"],
+      "@useTheme": ["hooks/useTheme.ts"],
+      "@compStyles/*": ["theme/components/*"]
     },
     "types": ["jest", "@testing-library/jest-native"]
   }

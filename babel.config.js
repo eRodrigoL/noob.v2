@@ -17,9 +17,25 @@ module.exports = function (api) {
       [
         "module-resolver",
         {
+          root: ["./src"],
           // Alias: aliases servem como encurtadores de rotas a partir da raiz do aplicativo
           alias: {
+            // Raiz
+            "@": "./src",
+
+            // Telas
             "@screens": "./src/screens",
+
+            // Componentes
+            "@components/*": "./src/components/*",
+
+            // Estilo
+            "@compStyles": "./src/theme/components",
+            "@globalStyles": "./src/theme/globalStyles.ts",
+            "@theme": "./src/theme/theme.ts",
+            "@typography": "./src/theme/typography.ts",
+            "@useTheme": "./src/hooks/useTheme.ts",
+            "@compStyles/*": "./src/theme/components/*",
           },
         },
       ],

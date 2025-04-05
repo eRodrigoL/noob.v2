@@ -4,29 +4,35 @@ import { TouchableOpacity, Text } from "react-native"; // Importa componentes b�
 import globalStyles from "@/theme/globalStyles"; // Importa estilos globais definidos no projeto
 import { useTheme } from "@/hooks/useTheme"; // Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
 
-interface ButtonPrimaryProps {
+interface ButtonHighlightProps {
   title: string;
   onPress: () => void;
 }
 
-const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ title, onPress }) => {
+const ButtonHighlight: React.FC<ButtonHighlightProps> = ({
+  title,
+  onPress,
+}) => {
   // Usa o hook useTheme para obter a estilização dinânica configurada globalmente
   const { colors, fontFamily, fontSizes } = useTheme();
 
   return (
     <TouchableOpacity
       style={[
-        globalStyles.buttonPrimary,
+        globalStyles.button,
         { backgroundColor: colors.backgroundHighlight },
       ]}
       onPress={onPress}
     >
       <Text
-        style={{
-          fontFamily,
-          fontSize: fontSizes.title,
-          color: colors.textOnHighlight,
-        }}
+        style={[
+          globalStyles.textCenteredBold,
+          {
+            fontFamily,
+            fontSize: fontSizes.title,
+            color: colors.textOnHighlight,
+          },
+        ]}
       >
         {title}
       </Text>
@@ -34,4 +40,4 @@ const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ title, onPress }) => {
   );
 };
 
-export default ButtonPrimary;
+export default ButtonHighlight;

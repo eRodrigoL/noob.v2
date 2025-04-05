@@ -2,6 +2,7 @@
 const theme = {
   // Tema claro
   light: {
+    background: "#FFFFFF",
     text: "#000000", //Substituir
     button: "#DDDDDD", //Substituir
 
@@ -18,6 +19,7 @@ const theme = {
 
   // Tema escuro
   dark: {
+    background: "#000000",
     text: "#FFFFFF", //Substituir
     button: "#333333", //Substituir
 
@@ -34,6 +36,7 @@ const theme = {
 
   // Tema para daltônicos
   daltonic: {
+    background: "#FFFFFF",
     text: "#000000", //Substituir
     button: "#00FFFF", //Substituir
 

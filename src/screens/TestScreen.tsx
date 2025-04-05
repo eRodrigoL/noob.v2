@@ -6,9 +6,9 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
 // Importa estilos globais definidos no projeto
-import globalStyles from "@/theme/globalStyles";
+import globalStyles from "@global";
 // Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@useTheme";
 
 type Props = NativeStackScreenProps<RootStackParamList, "TestScreen">;
 

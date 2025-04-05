@@ -3,29 +3,57 @@ import { StyleSheet } from "react-native";
 
 // Define um objeto de estilos globais usando StyleSheet.create
 const globalStyles = StyleSheet.create({
-  // Estilo para o container principal
+  // Container princípal das telas
   container: {
     flex: 1, // Ocupa todo o espaço disponível na tela
     padding: 20, // Adiciona um preenchimento interno de 20 unidades em todos os lados
   },
 
-  // Estilo para botões
+  // Botão genérico base
   button: {
-    padding: 10, // Adiciona um preenchimento interno de 10 unidades em todos os lados
-    alignItems: "center", // Centraliza o conteúdo do botão horizontalmente
-    borderRadius: 5, // Adiciona cantos arredondados com raio de 5 unidades
-    marginVertical: 5, // Adiciona uma margem vertical de 5 unidades acima e abaixo do botão
-  },
-
-  // Estilos para botões primários
-  buttonPrimary: {
     minWidth: "80%", // Define a largura do botão primário
-    padding: 10,
+    padding: 10, // Adiciona um preenchimento interno de 10 unidades em todos os lados
     justifyContent: "center", // Centraliza o conteúdo verticalmente dentro do botão
     alignItems: "center", // Centraliza o conteúdo horizontalmente dentro do botão
     borderRadius: 5, // Define o raio da borda para cantos arredondados
-    margin: 20,
-    // backgroundColor: Theme.light.backgroundButton, // Define a cor de fundo do botão primário com base no tema
+    margin: 20, // Margem de 20 unidades de todos os lados
+  },
+
+  // Texto centralizado e em negrito (usado para títulos, destaque, botões principais)
+  textCenteredBold: {
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+
+  // Texto centralizado (exp.: botões secundários, descrições de imagens e gráficos, etc.)
+  textCentered: {
+    textAlign: "center",
+    fontWeight: "normal",
+  },
+
+  // Texto justificado e em negrito (exp.: subtítulos, etc.)
+  textJustifiedBoldItalic: {
+    textAlign: "justify",
+    fontWeight: "bold",
+    fontStyle: "italic",
+  },
+
+  // Texto justificado e normal (exp.: textos simples, descrições, textos longos, etc.)
+  textJustified: {
+    textAlign: "justify",
+    fontWeight: "normal",
+  },
+
+  // Quadro ou card genérico com sombra leve
+  card: {
+    padding: 15,
+    marginVertical: 10,
+    borderRadius: 8,
+    elevation: 2, // sombra no Android
+    shadowColor: "#000", // sombra no iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
   },
 });
 
