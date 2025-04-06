@@ -5,34 +5,33 @@ import typography from "@/theme/typography"; // Importa as definições de tipog
 
 // Hook personalizado que fornece tema e tipografia atualizados globalmente
 export const useTheme = () => {
-  // Extrai as configurações relevantes do store de configurações
-  const { colorScheme, fontFamily, fontSizeMultiplier } = useSettingsStore();
+  // Obtém configurações globais do Zustand
+  const { fontFamily, fontSizeMultiplier, colorScheme } = useSettingsStore();
 
-  // Retorna um objeto com as configurações de tema e tipografia
+  // Define cores com base no tema selecionado (light, dark ou daltonic)
+  const colors = theme[colorScheme];
+
+  // Calcula tamanhos de fonte aplicando os multiplicadores e limites
+  const base = typography.sizes.base * fontSizeMultiplier;
+  const fontSizes = {
+    small: Math.max(
+      typography.sizes.min,
+      base * typography.sizes.smallMultiplier,
+    ),
+    base: base,
+    large: Math.min(
+      typography.sizes.max,
+      base * typography.sizes.largeMultiplier,
+    ),
+    giant: Math.min(
+      typography.sizes.max,
+      base * typography.sizes.giantMultiplier,
+    ),
+  };
+
   return {
-    // Obtém as cores correspondentes ao esquema de cores selecionado (claro ou escuro)
-    colors: theme[colorScheme],
-
-    // Obtém a família da fonte definida nas configurações
-    // O 'as keyof typeof typography.fonts' garante que fontFamily seja uma chave válida do objeto typography.fonts
-    fontFamily: typography.fonts[fontFamily as keyof typeof typography.fonts],
-
-    // Calcula e retorna os tamanhos de fonte ajustados com base no multiplicador definido pelo usuário
-    fontSizes: {
-      // Tamanho do título: tamanho base * multiplicador de título * multiplicador global
-      title:
-        typography.sizes.body *
-        typography.sizes.titleMultiplier *
-        fontSizeMultiplier,
-
-      // Tamanho do subtítulo: tamanho base * multiplicador de subtítulo * multiplicador global
-      subtitle:
-        typography.sizes.body *
-        typography.sizes.subtitleMultiplier *
-        fontSizeMultiplier,
-
-      // Tamanho do corpo do texto: tamanho base * multiplicador global
-      body: typography.sizes.body * fontSizeMultiplier,
-    },
+    colors, // Paleta de cores do tema selecionado
+    fontFamily, // Família da fonte escolhida pelo usuário
+    fontSizes, // Tamanhos de fonte ajustados dinamicamente
   };
 };

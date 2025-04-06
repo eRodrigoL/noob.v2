@@ -47,15 +47,16 @@ export default function SettingsScreen({ navigation }: Props) {
 
   // Cálculo local dos tamanhos de fonte
   const fontSizes = {
-    title:
-      typography.sizes.body *
-      typography.sizes.titleMultiplier *
+    giant:
+      typography.sizes.base *
+      typography.sizes.giantMultiplier *
       localFontSizeMultiplier,
-    subtitle:
-      typography.sizes.body *
-      typography.sizes.subtitleMultiplier *
+    large:
+      typography.sizes.base *
+      typography.sizes.largeMultiplier *
       localFontSizeMultiplier,
-    body: typography.sizes.body * localFontSizeMultiplier,
+    base: typography.sizes.base * localFontSizeMultiplier,
+    small: typography.sizes.smallMultiplier * localFontSizeMultiplier,
   };
 
   // Opções disponíveis para seleção de fonte
@@ -78,6 +79,13 @@ export default function SettingsScreen({ navigation }: Props) {
     setColorScheme(localColorScheme);
     // Aplica o multiplicador local ao Zustand
     useSettingsStore.setState({ fontSizeMultiplier: localFontSizeMultiplier });
+  };
+
+  // Restaura os valores padrão apenas localmente
+  const restoreLocalDefaults = () => {
+    setLocalFontFamily("arial");
+    setLocalColorScheme("light");
+    setLocalFontSizeMultiplier(1);
   };
 
   // Handlers para tamanho local imediato
@@ -104,7 +112,7 @@ export default function SettingsScreen({ navigation }: Props) {
       <Text
         style={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
       >
@@ -119,12 +127,12 @@ export default function SettingsScreen({ navigation }: Props) {
         boxStyles={{ marginBottom: 20 }}
         dropdownTextStyles={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
         inputStyles={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
       />
@@ -133,7 +141,7 @@ export default function SettingsScreen({ navigation }: Props) {
       <Text
         style={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
       >
@@ -157,7 +165,7 @@ export default function SettingsScreen({ navigation }: Props) {
           <Text
             style={{
               fontFamily: previewFontFamily,
-              fontSize: fontSizes.body,
+              fontSize: fontSizes.base,
               color: previewColors.textOnSemiHighlight,
             }}
           >
@@ -175,7 +183,7 @@ export default function SettingsScreen({ navigation }: Props) {
           <Text
             style={{
               fontFamily: previewFontFamily,
-              fontSize: fontSizes.body,
+              fontSize: fontSizes.base,
               color: previewColors.textOnSemiHighlight,
             }}
           >
@@ -188,7 +196,7 @@ export default function SettingsScreen({ navigation }: Props) {
       <Text
         style={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
       >
@@ -203,12 +211,12 @@ export default function SettingsScreen({ navigation }: Props) {
         boxStyles={{ marginBottom: 20 }}
         dropdownTextStyles={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
         inputStyles={{
           fontFamily: previewFontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: previewColors.textOnBase,
         }}
       />
@@ -224,7 +232,7 @@ export default function SettingsScreen({ navigation }: Props) {
         <Text
           style={{
             fontFamily: previewFontFamily,
-            fontSize: fontSizes.body,
+            fontSize: fontSizes.base,
             color: previewColors.textOnHighlight,
           }}
         >
@@ -237,12 +245,12 @@ export default function SettingsScreen({ navigation }: Props) {
           globalStyles.button,
           { backgroundColor: previewColors.backgroundSemiHighlight },
         ]}
-        onPress={restoreDefaults}
+        onPress={restoreLocalDefaults}
       >
         <Text
           style={{
             fontFamily: previewFontFamily,
-            fontSize: fontSizes.body,
+            fontSize: fontSizes.base,
             color: previewColors.textOnSemiHighlight,
           }}
         >
@@ -260,7 +268,7 @@ export default function SettingsScreen({ navigation }: Props) {
         <Text
           style={{
             fontFamily: previewFontFamily,
-            fontSize: fontSizes.body,
+            fontSize: fontSizes.base,
             color: previewColors.textOnSemiHighlight,
           }}
         >

@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({ title, onPress }) => {
           globalStyles.textCentered,
           {
             fontFamily,
-            fontSize: fontSizes.title,
+            fontSize: fontSizes.large,
             color: colors.textOnHighlight,
           },
         ]}

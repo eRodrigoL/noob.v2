@@ -29,7 +29,7 @@ const ButtonHighlight: React.FC<ButtonHighlightProps> = ({
           globalStyles.textCenteredBold,
           {
             fontFamily,
-            fontSize: fontSizes.title,
+            fontSize: fontSizes.large,
             color: colors.textOnHighlight,
           },
         ]}

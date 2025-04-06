@@ -1,21 +1,25 @@
-// Definição básica dos tamanhos e fontes usadas na aplicação
+// Define os estilos de tipografia globais da aplicação
 const typography = {
-  // Definição das famílias de fontes disponíveis
+  // Famílias de fontes disponíveis no app (devem corresponder ao nome no useFonts)
   fonts: {
     arial: "Arial",
     roboto: "Roboto",
     times: "Times New Roman",
   },
 
-  // Definição dos tamanhos de texto e multiplicadores
+  // Tamanhos base de fonte e multiplicadores
   sizes: {
-    body: 16, // Tamanho base do corpo do texto em pixels
-    subtitleMultiplier: 1.3, // Multiplicador para o tamanho do subtítulo (30% maior que o corpo)
-    titleMultiplier: 1.6, // Multiplicador para o tamanho do título (60% maior que o corpo)
-    min: 12, // Tamanho mínimo permitido para textos em pixels
-    max: 24, // Tamanho máximo permitido para textos em pixels
+    base: 16, // Tamanho padrão do corpo do texto (em pixels)
+
+    // Multiplicadores proporcionais
+    smallMultiplier: 0.85, // Pequeno (15% menor que o padrão)
+    largeMultiplier: 1.3, // Grande (30% maior que o padrão)
+    giantMultiplier: 1.6, // Gigante (60% maior que o padrão)
+
+    // Limites globais
+    min: 12, // Tamanho mínimo permitido (em pixels)
+    max: 24, // Tamanho máximo permitido (em pixels)
   },
 };
 
-// Exporta o objeto typography para ser usado em outros arquivos
 export default typography;

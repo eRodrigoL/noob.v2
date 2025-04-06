@@ -25,38 +25,48 @@ export default function TestScreen({ navigation }: Props) {
         { backgroundColor: colors.backgroundBase },
       ]}
     >
-      {/* Título da tela com fonte, tamanho e cor definidos pelo tema */}
+      {/* Texto gigante com fonte, tamanho e cor definidos pelo tema */}
       <Text
         style={{
           fontFamily,
-          fontSize: fontSizes.title,
+          fontSize: fontSizes.giant,
           color: colors.textOnBase,
         }}
       >
-        Título da Tela
+        Texto Gigante
       </Text>
 
-      {/* Subtítulo da tela com fonte, tamanho e cor definidos pelo tema */}
+      {/* Texto grande com fonte, tamanho e cor definidos pelo tema */}
       <Text
         style={{
           fontFamily,
-          fontSize: fontSizes.subtitle,
+          fontSize: fontSizes.large,
           color: colors.textOnBase,
         }}
       >
-        Subtítulo da Tela
+        Texto Grande
       </Text>
 
-      {/* Texto explicativo exibindo estilos aplicados globalmente */}
+      {/* Texto padrão com fonte, tamanho e cor definidos pelo tema */}
       <Text
         style={{
           fontFamily,
-          fontSize: fontSizes.body,
+          fontSize: fontSizes.base,
           color: colors.textOnBase,
         }}
       >
-        Este é um exemplo de texto da tela para visualização de estilos
-        aplicados globalmente.
+        Texto Padrão
+      </Text>
+
+      {/* Texto pequeno com fonte, tamanho e cor definidos pelo tema */}
+      <Text
+        style={{
+          fontFamily,
+          fontSize: fontSizes.small,
+          color: colors.textOnBase,
+        }}
+      >
+        Texto Pequeno
       </Text>
 
       {/* Botão para navegar até a tela de configurações */}
@@ -72,7 +82,7 @@ export default function TestScreen({ navigation }: Props) {
         <Text
           style={{
             fontFamily,
-            fontSize: fontSizes.body,
+            fontSize: fontSizes.large,
             color: colors.textOnHighlight,
           }}
         >
