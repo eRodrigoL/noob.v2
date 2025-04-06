@@ -97,7 +97,7 @@ export default function SettingsScreen({ navigation }: Props) {
     <View
       style={[
         globalStyles.container,
-        { backgroundColor: previewColors.background },
+        { backgroundColor: previewColors.backgroundBase },
       ]}
     >
       {/* Seleção de Fonte */}
@@ -105,7 +105,7 @@ export default function SettingsScreen({ navigation }: Props) {
         style={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
       >
         Fonte do corpo:
@@ -120,12 +120,12 @@ export default function SettingsScreen({ navigation }: Props) {
         dropdownTextStyles={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
         inputStyles={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
       />
 
@@ -134,7 +134,7 @@ export default function SettingsScreen({ navigation }: Props) {
         style={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
       >
         Tamanho da fonte:
@@ -150,7 +150,7 @@ export default function SettingsScreen({ navigation }: Props) {
         <TouchableOpacity
           style={[
             globalStyles.button,
-            { backgroundColor: previewColors.button },
+            { backgroundColor: previewColors.backgroundSemiHighlight },
           ]}
           onPress={handleDecrease}
         >
@@ -158,7 +158,7 @@ export default function SettingsScreen({ navigation }: Props) {
             style={{
               fontFamily: previewFontFamily,
               fontSize: fontSizes.body,
-              color: previewColors.text,
+              color: previewColors.textOnSemiHighlight,
             }}
           >
             A-
@@ -168,7 +168,7 @@ export default function SettingsScreen({ navigation }: Props) {
         <TouchableOpacity
           style={[
             globalStyles.button,
-            { backgroundColor: previewColors.button },
+            { backgroundColor: previewColors.backgroundSemiHighlight },
           ]}
           onPress={handleIncrease}
         >
@@ -176,7 +176,7 @@ export default function SettingsScreen({ navigation }: Props) {
             style={{
               fontFamily: previewFontFamily,
               fontSize: fontSizes.body,
-              color: previewColors.text,
+              color: previewColors.textOnSemiHighlight,
             }}
           >
             A+
@@ -189,7 +189,7 @@ export default function SettingsScreen({ navigation }: Props) {
         style={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
       >
         Tema de cores:
@@ -204,25 +204,28 @@ export default function SettingsScreen({ navigation }: Props) {
         dropdownTextStyles={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
         inputStyles={{
           fontFamily: previewFontFamily,
           fontSize: fontSizes.body,
-          color: previewColors.text,
+          color: previewColors.textOnBase,
         }}
       />
 
       {/* Botões de Ação */}
       <TouchableOpacity
-        style={[globalStyles.button, { backgroundColor: previewColors.button }]}
+        style={[
+          globalStyles.button,
+          { backgroundColor: previewColors.backgroundHighlight },
+        ]}
         onPress={applyChanges}
       >
         <Text
           style={{
             fontFamily: previewFontFamily,
             fontSize: fontSizes.body,
-            color: previewColors.text,
+            color: previewColors.textOnHighlight,
           }}
         >
           Confirmar mudanças
@@ -230,14 +233,17 @@ export default function SettingsScreen({ navigation }: Props) {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={[globalStyles.button, { backgroundColor: previewColors.button }]}
+        style={[
+          globalStyles.button,
+          { backgroundColor: previewColors.backgroundSemiHighlight },
+        ]}
         onPress={restoreDefaults}
       >
         <Text
           style={{
             fontFamily: previewFontFamily,
             fontSize: fontSizes.body,
-            color: previewColors.text,
+            color: previewColors.textOnSemiHighlight,
           }}
         >
           Restaurar padrão
@@ -245,14 +251,17 @@ export default function SettingsScreen({ navigation }: Props) {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={[globalStyles.button, { backgroundColor: previewColors.button }]}
+        style={[
+          globalStyles.button,
+          { backgroundColor: previewColors.backgroundSemiHighlight },
+        ]}
         onPress={() => navigation.goBack()}
       >
         <Text
           style={{
             fontFamily: previewFontFamily,
             fontSize: fontSizes.body,
-            color: previewColors.text,
+            color: previewColors.textOnSemiHighlight,
           }}
         >
           Voltar

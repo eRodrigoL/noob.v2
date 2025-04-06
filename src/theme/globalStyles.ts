@@ -11,12 +11,11 @@ const globalStyles = StyleSheet.create({
 
   // Botão genérico base
   button: {
-    minWidth: "80%", // Define a largura do botão primário
     padding: 10, // Adiciona um preenchimento interno de 10 unidades em todos os lados
     justifyContent: "center", // Centraliza o conteúdo verticalmente dentro do botão
     alignItems: "center", // Centraliza o conteúdo horizontalmente dentro do botão
     borderRadius: 5, // Define o raio da borda para cantos arredondados
-    margin: 20, // Margem de 20 unidades de todos os lados
+    margin: 5, // Margem de 20 unidades de todos os lados
   },
 
   // Texto centralizado e em negrito (usado para títulos, destaque, botões principais)

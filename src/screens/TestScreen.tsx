@@ -20,25 +20,40 @@ export default function TestScreen({ navigation }: Props) {
   return (
     // Container principal da tela com estilo global e cor de fundo definida pelo tema atual
     <View
-      style={[globalStyles.container, { backgroundColor: colors.background }]}
+      style={[
+        globalStyles.container,
+        { backgroundColor: colors.backgroundBase },
+      ]}
     >
       {/* Título da tela com fonte, tamanho e cor definidos pelo tema */}
       <Text
-        style={{ fontFamily, fontSize: fontSizes.title, color: colors.text }}
+        style={{
+          fontFamily,
+          fontSize: fontSizes.title,
+          color: colors.textOnBase,
+        }}
       >
         Título da Tela
       </Text>
 
       {/* Subtítulo da tela com fonte, tamanho e cor definidos pelo tema */}
       <Text
-        style={{ fontFamily, fontSize: fontSizes.subtitle, color: colors.text }}
+        style={{
+          fontFamily,
+          fontSize: fontSizes.subtitle,
+          color: colors.textOnBase,
+        }}
       >
         Subtítulo da Tela
       </Text>
 
       {/* Texto explicativo exibindo estilos aplicados globalmente */}
       <Text
-        style={{ fontFamily, fontSize: fontSizes.body, color: colors.text }}
+        style={{
+          fontFamily,
+          fontSize: fontSizes.body,
+          color: colors.textOnBase,
+        }}
       >
         Este é um exemplo de texto da tela para visualização de estilos
         aplicados globalmente.
@@ -47,12 +62,19 @@ export default function TestScreen({ navigation }: Props) {
       {/* Botão para navegar até a tela de configurações */}
       <TouchableOpacity
         // Estilo do botão inclui estilos globais e cor de fundo definida pelo tema atual
-        style={[globalStyles.button, { backgroundColor: colors.button }]}
+        style={[
+          globalStyles.button,
+          { backgroundColor: colors.backgroundHighlight },
+        ]}
         onPress={() => navigation.navigate("SettingsScreen")} // Navega para a tela "SettingsScreen"
       >
         {/* Texto do botão com fonte, tamanho e cor definidos pelo tema */}
         <Text
-          style={{ fontFamily, fontSize: fontSizes.body, color: colors.text }}
+          style={{
+            fontFamily,
+            fontSize: fontSizes.body,
+            color: colors.textOnHighlight,
+          }}
         >
           Configurações
         </Text>
