@@ -8,7 +8,10 @@ import {
   Dimensions,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useNavigation } from "@react-navigation/native";
+
+// Navigation
+import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { RootStackParamList } from "@/navigation/RootNavigator";
 
 import api from "@/api/apiClient"; // Substitui axios direto
 import { useTheme } from "@/hooks/useTheme";
@@ -17,21 +20,21 @@ import { headerMenuStyles } from "@compStyles/SandwichMenu.styles"; // Estilos e
 import ButtonHighlight from "@components/ButtonHighlight";
 import axios from "axios";
 
+const { width } = Dimensions.get("window");
+
 interface ModalProps {
   visible: boolean;
   onClose: () => void;
 }
 
-const { width } = Dimensions.get("window");
-
 const SandwichMenu: React.FC<ModalProps> = ({ visible, onClose }) => {
   const slideAnim = React.useRef(new Animated.Value(-width)).current;
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const [hasOpenMatch, setHasOpenMatch] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const { colors } = useTheme(); // Acessa o tema atual
-  const navigation = useNavigation(); // Hook de navegação do React Navigation
 
   // Verifica autenticação
   const checkAuthentication = async () => {
@@ -133,12 +136,24 @@ const SandwichMenu: React.FC<ModalProps> = ({ visible, onClose }) => {
               ]}
             >
               <View style={headerMenuStyles.buttonContainer}>
+                {/* Início leva para TestScreen temporariamente */}
                 <ButtonHighlight
                   title="Início"
                   onPress={() => {
-                    // navigation.navigate("GameList");
+                    navigation.navigate("TestScreen");
+                    onClose();
                   }}
                 />
+
+                {/* Novo botão: Configurações */}
+                <ButtonHighlight
+                  title="Configurações"
+                  onPress={() => {
+                    navigation.navigate("SettingsScreen");
+                    onClose();
+                  }}
+                />
+
                 {!isAuthenticated ? (
                   <ButtonHighlight
                     title="Login"

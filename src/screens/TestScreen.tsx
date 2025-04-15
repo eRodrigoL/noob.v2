@@ -1,14 +1,14 @@
-// Importa React para criar componentes
-import React from "react";
-// Importa componentes básicos do React Native
-import { View, Text, TouchableOpacity } from "react-native";
+import React from "react"; // Importa React para criar componentes
+import { View, Text, TouchableOpacity } from "react-native"; // Importa componentes básicos do React Native
+
 // Importa tipos para tipagem de navegação com React Navigation
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
-// Importa estilos globais definidos no projeto
-import globalStyles from "@global";
-// Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
-import { useTheme } from "@useTheme";
+
+import globalStyles from "@global"; // Importa estilos globais definidos no projeto
+import { useTheme } from "@useTheme"; // Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
+
+import Header from "@components/Header"; // Componente cabeçalho
 
 type Props = NativeStackScreenProps<RootStackParamList, "TestScreen">;
 
@@ -25,6 +25,9 @@ export default function TestScreen({ navigation }: Props) {
         { backgroundColor: colors.backgroundBase },
       ]}
     >
+      {/* Componente Header (cabeçalho) */}
+      <Header title="Tela de Teste" />
+
       {/* Texto gigante com fonte, tamanho e cor definidos pelo tema */}
       <Text
         style={{
@@ -68,27 +71,6 @@ export default function TestScreen({ navigation }: Props) {
       >
         Texto Pequeno
       </Text>
-
-      {/* Botão para navegar até a tela de configurações */}
-      <TouchableOpacity
-        // Estilo do botão inclui estilos globais e cor de fundo definida pelo tema atual
-        style={[
-          globalStyles.button,
-          { backgroundColor: colors.backgroundHighlight },
-        ]}
-        onPress={() => navigation.navigate("SettingsScreen")} // Navega para a tela "SettingsScreen"
-      >
-        {/* Texto do botão com fonte, tamanho e cor definidos pelo tema */}
-        <Text
-          style={{
-            fontFamily,
-            fontSize: fontSizes.large,
-            color: colors.textOnHighlight,
-          }}
-        >
-          Configurações
-        </Text>
-      </TouchableOpacity>
     </View>
   );
 }

@@ -6,7 +6,6 @@ const globalStyles = StyleSheet.create({
   // Container princípal das telas
   container: {
     flex: 1, // Ocupa todo o espaço disponível na tela
-    padding: 20, // Adiciona um preenchimento interno de 20 unidades em todos os lados
   },
 
   // Botão genérico base

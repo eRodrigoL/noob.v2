@@ -9,6 +9,8 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
 import { useTheme } from "@useTheme";
 
+import Header from "@components/Header"; // Componente cabeçalho
+
 // Define o tipo das props do componente
 type Props = NativeStackScreenProps<RootStackParamList, "SettingsScreen">;
 
@@ -108,6 +110,9 @@ export default function SettingsScreen({ navigation }: Props) {
         { backgroundColor: previewColors.backgroundBase },
       ]}
     >
+      {/* Componente Header (cabeçalho) */}
+      <Header title="Configurações" />
+
       {/* Seleção de Fonte */}
       <Text
         style={{
@@ -255,24 +260,6 @@ export default function SettingsScreen({ navigation }: Props) {
           }}
         >
           Restaurar padrão
-        </Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={[
-          globalStyles.button,
-          { backgroundColor: previewColors.backgroundSemiHighlight },
-        ]}
-        onPress={() => navigation.goBack()}
-      >
-        <Text
-          style={{
-            fontFamily: previewFontFamily,
-            fontSize: fontSizes.base,
-            color: previewColors.textOnSemiHighlight,
-          }}
-        >
-          Voltar
         </Text>
       </TouchableOpacity>
     </View>
