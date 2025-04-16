@@ -18,10 +18,8 @@
       "@components/*": ["components/*"],
 
       // Estilos
-      "@global": ["theme/globalStyles.ts"],
-      "@theme": ["theme/theme.ts"],
-      "@typography": ["theme/typography.ts"],
-      "@useTheme": ["hooks/useTheme.ts"],
+      "@theme": ["theme"],
+      "@theme/*": ["theme/*"],
       "@compStyles/*": ["theme/components/*"]
     },
     "types": ["jest", "@testing-library/jest-native"]

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import globalStyles from "@global";
-import theme from "@theme";
-import typography from "@typography";
 import { SelectList } from "react-native-dropdown-select-list";
 import { useSettingsStore } from "@/store/useSettingsStore";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
-import { useTheme } from "@useTheme";
+import { useTheme, theme, typography, globalStyles } from "@theme"; // Importa temas, cores e estilos
 
 import Header from "@components/Header"; // Componente cabeçalho
 

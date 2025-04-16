@@ -84,11 +84,12 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── 📂 [x] components
     │   │   │   ├── [x] Header.styles.ts
     │   │   │   └── [x] SandwichMenu.styles.ts
-    │   │   ├── [x] globalStyles.ts
-    │   │   ├── [x] theme.ts
-    │   │   ├── [x] typography.ts
+    │   │   ├── 📂 [x] global
+    │   │   │   ├── [x] globalStyles.ts
+    │   │   │   ├── [x] theme.ts
+    │   │   │   └── [x] typography.ts
     │   │   ├── [ ] spacing.ts
-    │   │   └── [ ] index.ts
+    │   │   └── [x] index.ts
     │   ├── 📂 [ ] utils/ # Utilitários e helpers
     │   │   ├── [ ] formatDate.ts
     │   │   ├── [ ] storage.ts

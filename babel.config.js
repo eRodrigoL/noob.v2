@@ -30,11 +30,8 @@ module.exports = function (api) {
             "@components/*": "./src/components/*",
 
             // Estilo
-            "@compStyles": "./src/theme/components",
-            "@globalStyles": "./src/theme/globalStyles.ts",
-            "@theme": "./src/theme/theme.ts",
-            "@typography": "./src/theme/typography.ts",
-            "@useTheme": "./src/hooks/useTheme.ts",
+            "@theme": "./src/theme",
+            "@theme/*": "./src/theme/*",
             "@compStyles/*": "./src/theme/components/*",
           },
         },

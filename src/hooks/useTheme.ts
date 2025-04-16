@@ -1,7 +1,7 @@
 // Importa o hook personalizado useSettingsStore do arquivo de configurações
 import { useSettingsStore } from "@/store/useSettingsStore";
-import theme from "@/theme/theme"; // Importa as definições de tema (cores) do arquivo theme.ts
-import typography from "@/theme/typography"; // Importa as definições de tipografia do arquivo typography.ts
+import theme from "@/theme/global/theme"; // Importa as definições de tema (cores) do arquivo theme.ts
+import typography from "@/theme/global/typography"; // Importa as definições de tipografia do arquivo typography.ts
 
 // Hook personalizado que fornece tema e tipografia atualizados globalmente
 export const useTheme = () => {
