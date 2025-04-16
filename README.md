@@ -9,11 +9,12 @@ A aplicação trata-se de uma ferramenta Android/web desenvolvida em React Nativ
 - Registro de partidas
 - Visualização de desempenho
 
-# Inicialização
+## Inicialização
 
-- O projeto é construído em torno do React Native pelo framework de desenvolvimento Expo (https://docs.expo.dev/). Foi usado a opção "Blank (TypeScript)" do comando:
+- O projeto é construído em torno do React Native pelo framework de desenvolvimento Expo [https://docs.expo.dev/](https://docs.expo.dev/). Foi usado a opção "Blank (TypeScript)" do comando:
+
   ```bash
   npx create-expo-app@latest --template
   ```
 
-#### Confira [aqui](./documentation/index.md) a documentação completa
+Confira [aqui](./documentation/index.md) a documentação completa

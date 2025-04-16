@@ -28,7 +28,7 @@ Cada commit deve seguir o formato:
 
 > ✅ Exemplo:
 >
-> ```
+> ```bash
 > feat: adicionada funcionalidade de troca de tema na tela de configurações
 >
 > - integrado Zustand com componentes de tema
@@ -56,24 +56,24 @@ Cada commit deve seguir o formato:
 
 ## ✅ Exemplos Reais
 
-```
+```bash
 feat: adicionada tela de configurações com troca de fonte e tema
 
 - criada SettingsScreen.tsx
 - integrado Zustand com seletor de tema e fonte
 ```
 
-```
+```bash
 fix: corrigido bug na navegação entre telas
 
 - problema ocorria ao retornar da tela de perfil
 ```
 
-```
+```bash
 chore: adicionadas fontes Arial e Times à pasta assets/fonts
 ```
 
-```
+```bash
 test: iniciada configuração de testes com jest e testing-library
 
 - criados arquivos de teste e jest.config.js

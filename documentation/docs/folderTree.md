@@ -1,4 +1,5 @@
-### [← Voltar (Índice)](../index.md)
+<!-- markdownlint-disable-next-line MD041 -->
+[← Voltar (Índice)](../index.md)
 
 # Arquitetura De Pastas
 
@@ -6,27 +7,28 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
 
     ([x] = arquivos e pastas já presentes na aplicação)
     📦 noob.v2/
-    ├── 📂 [ ] __mocks__/
-    │   └── 📂 [ ] @react-native-async-storage/
-    │   │   ├── [ ] async-storage.ts
-    ├── 📂 [ ] assets/ # Imagens, ícones, fontes, etc.
-    │   ├── 📂 [ ] fonts/ # arquivos de fontes
-    │   │   ├── [ ] Arial.ttf
-    │   │   ├── [ ] Open Sans.ttf
-    │   │   ├── [ ] SpaceMono-Regular.ttf
-    │   │   └── [ ] Times New Roman.ttf
-    │   ├── 📂 [ ] images/ # arquivos de fontes
-    │   │   ├── [ ] splash.png
-    │   │   ├── [ ] SpaceMono-Regular.ttf
-    │   │   └── [ ] Times New Roman.ttf
-    │   │   ├── 📂 [ ] icons/
-    │   │   │   └── [ ] icon.png
-    │   │   ├── 📂 [ ] lottie/
+    ├── 📂 [x] __mocks__/
+    │   └── 📂 [x] @react-native-async-storage/
+    │       └── [x] async-storage.ts
+    ├── 📂 [x] assets/ # Imagens, ícones, fontes, etc.
+    │   ├── 📂 [x] fonts/ # arquivos de fontes
+    │   │   ├── [x] Arial.ttf
+    │   │   ├── [x] Roboto.ttf
+    │   │   └── [x] Times New Roman.ttf
+    │   └── 📂 [ ] images/ # arquivos de fontes
+    │       ├── 📂 [ ] icons/
+    │       │   └── [ ] icon.png
+    │       ├── 📂 [ ] lottie/
+    │       ├── [ ] splash.png
+    │       ├── [ ] SpaceMono-Regular.ttf
+    │       └── [ ] Times New Roman.ttf
     ├── 📂 [x] documentation/ # documentação.
-    │   │   ├── 📂 [ ] docs/
-    │   │   │   ├── [x] dependenciesList.md
-    │   │   │   └── [x] folderTree.md
-    │   │   └── [x] index.ms
+    │   ├── 📂 [ ] docs/
+    │   │   ├── [x] commit-guidelines.md
+    │   │   ├── [x] dependenciesList.md
+    │   │   ├── [x] folderTree.md
+    │   │   └── [x] styling.md
+    │   └── [x] index.ms (sumário)
     ├── 📂 [x] src/
     │   ├── 📂 [x] api/ # Comunicação com APIs
     │   │   ├── [x] apiClient.ts
@@ -34,21 +36,22 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] users.ts
     │   │   └── [ ] games.ts
     │   ├── 📂 [x] components/ # Componentes reutilizáveis
-    │   │   ├── [ ] Header.tsx
-    │   │   ├── [ ] Button.tsx
+    │   │   ├── [x] Button.tsx
+    │   │   ├── [x] ButtonHighlight.tsx
+    │   │   ├── [x] Header.tsx
     │   │   ├── [ ] Card.tsx
     │   │   ├── [ ] Header.tsx
     │   │   ├── [ ] Input.tsx
     │   │   ├── [ ] Loading.tsx
     │   │   ├── [ ] Modal.tsx
     │   │   ├── [ ] ParallaxProfile.tsx
-    │   │   ├── [ ] SandwichMenu.tsx
+    │   │   ├── [x] SandwichMenu.tsx
     │   │   └── [ ] ThemeToggle.tsx
     │   ├── 📂 [x] hooks/ # Hooks personalizados
     │   │   ├── [ ] useAuth.ts
     │   │   ├── [ ] useGames.ts
     │   │   ├── [ ] useFetch.ts
-    │   │   └── [ ] useTheme.ts
+    │   │   └── [x] useTheme.ts
     │   ├── 📂 [x] navigation/ # Navegação (React Navigation)
     │   │   ├── [x] RootNavigator.tsx
     │   │   ├── [ ] AppTabs.tsx
@@ -77,15 +80,10 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] useThemeStore.ts
     │   │   ├── [ ] useGameStore.ts
     │   │   └── [ ] index.ts
-    ├── 📂 [x] tests/ # Testes unitários e de integração
-    │   │   ├── 📂 [ ] components/
-    │   │   ├── 📂 [ ] hooks/
-    │   │   ├── 📂 [x] screens/
-    │   │   │   └── [x] SettingsScreen.test.tsx
-    │   │   ├── 📂 [x] atore/
-    │   │   │   └── [x] useSettingsStore.test.ts
-    │   │   └── 📂 [ ] api/
     │   ├── 📂 [x] theme/ # Tema (cores, fontes)
+    │   │   ├── 📂 [x] components
+    │   │   │   ├── [x] Header.styles.ts
+    │   │   │   └── [x] SandwichMenu.styles.ts
     │   │   ├── [x] globalStyles.ts
     │   │   ├── [x] theme.ts
     │   │   ├── [x] typography.ts
@@ -99,6 +97,14 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   ├── [x] App.tsx # Arquivo principal
     │   ├── [ ] types.ts # Definição de tipos
     │   └── [ ] env.ts # Configuração de variáveis de ambiente
+    ├── 📂 [x] tests/ # Testes unitários e de integração
+    │   ├── 📂 [ ] components/
+    │   ├── 📂 [ ] hooks/
+    │   ├── 📂 [x] screens/
+    │   │   └── [x] SettingsScreen.test.tsx
+    │   ├── 📂 [x] store/
+    │   │   └── [x] useSettingsStore.test.ts
+    │   └── 📂 [ ] api/
     ├── [x] .gitignore
     ├── [x] .editconfig
     ├── [x] .prettierignore
@@ -121,4 +127,4 @@ A árvore de pastas acima contém nome geréricos de arquivos quando se trata do
 
 - Colaboração: Outros desenvolvedores podem rapidamente entender a estrutura do projeto.
 
-### [← Voltar (Índice)](../index.md)
+[← Voltar (Índice)](../index.md)

@@ -1,4 +1,5 @@
-### [← Voltar (Índice)](../index.md)
+<!-- markdownlint-disable-next-line MD041 -->
+[← Voltar (Índice)](../index.md)
 
 # Documentação técnica da estilização
 
@@ -61,6 +62,7 @@ Contém estilos fixos, reutilizáveis e independentes das escolhas dinâmicas fe
   ```
 
 - **Criar uma nova paleta de cores:**
+
   ```ts
   sepia: {
     background: "#F4ECD8",
@@ -68,29 +70,36 @@ Contém estilos fixos, reutilizáveis e independentes das escolhas dinâmicas fe
     button: "#CBB994",
   }
   ```
+
   > Após criar a nova paleta, adicione-a no SelectList da tela de configurações e no tipo aceito pelo Zustand.
 
 ### 🔠 Fontes (`typography.ts` + `assets/fonts` + `App.tsx`)
 
 - **Adicionar nova fonte:**
+
   1. Coloque o arquivo `.ttf` em `assets/fonts/` com nome sem espaços ou hifens (ex: `TimesNewRoman.ttf`).
   2. No `App.tsx`, registre a fonte:
+
      ```ts
      useFonts({
        TimesNewRoman: require("../assets/fonts/TimesNewRoman.ttf"),
      });
      ```
+
   3. Em `typography.ts`, adicione:
+
      ```ts
      fonts: {
        timesNewRoman: "TimesNewRoman";
      }
      ```
+
   4. Adicione a nova fonte na lista de opções do SelectList em `SettingsScreen.tsx`.
 
 ### 🔡 Tamanhos de Fonte (`typography.ts`)
 
 - **Modificar o tamanho base e os limites:**
+
   ```ts
   sizes: {
     body: 16, // tamanho base da fonte padrão
@@ -104,6 +113,7 @@ Contém estilos fixos, reutilizáveis e independentes das escolhas dinâmicas fe
 ### 🧱 Estilos Fixos (`globalStyles.ts`)
 
 - **Adicionar bordas, sombras e espaçamentos reutilizáveis:**
+
   ```ts
   button: {
     padding: 10,
@@ -116,6 +126,7 @@ Contém estilos fixos, reutilizáveis e independentes das escolhas dinâmicas fe
     shadowRadius: 4,
   },
   ```
+
   > Use globalStyles apenas para estilos estáticos, que não dependem do tema, fonte ou tamanho escolhidos pelo usuário.
 
 ## 🌐 Gerenciamento dinâmico dos estilos
@@ -156,4 +167,4 @@ Este hook é responsável por:
 - Definir aparência definitiva das telas, componentes específicos, espaçamento e refinamento visual.
 - Trocar futuramente o AsyncStorage por chamadas API.
 
-### [← Voltar (Índice)](../index.md)
+[← Voltar (Índice)](../index.md)

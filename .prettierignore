@@ -1,4 +1,1 @@
-# Itens ignorados por conter algum trecho o prettier atrapalharia a formatação ao invés de ajudar
-
-### Árvore de arquivos
-documentation/docs/folderTree.md
+*.md

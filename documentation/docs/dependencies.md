@@ -1,224 +1,227 @@
-### [← Voltar (Índice)](../index.md)
+<!-- markdownlint-disable-next-line MD041 -->
+[← Voltar (Índice)](../index.md)
 
 # Dependências
 
 Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, plugins e afins utilizados ao longo do desenvolvimento (categorizados em agrupamentos e identificada a ordem de instalação).
 
-### Expo e Web
+## Ambiente Web e Core
 
-- 1. React DOM:
+- (1) React DOM:
 
   ```bash
   npx expo install react-dom
   ```
 
-  (Biblioteca para renderização web)
+  (Renderiza aplicações React no ambiente web)
 
-- 2. React Native Web:
+- (2) React Native Web:
 
   ```bash
   npx expo install react-native-web
   ```
 
-  (Biblioteca para suporte web em React Native)
+  (Permite que componentes React Native funcionem na web)
 
-- 3. Expo Metro Runtime:
+- (3) Expo Metro Runtime:
 
   ```bash
   npx expo install @expo/metro-runtime
   ```
 
-  (Runtime necessário para o Expo)
+  (Responsável pela execução do bundler Metro com suporte ao Expo)
 
-### Navegação
+## Navegação
 
-- 4. React Navigation Native:
+- (4) React Navigation:
 
   ```bash
   npm install @react-navigation/native
   ```
 
-(Biblioteca de navegação para React Native)
+  (Biblioteca principal de navegação para React Native)
 
-- 5. React Navigation Native Stack:
+- (5) Native Stack Navigator:
 
   ```bash
   npm install @react-navigation/native-stack
   ```
 
-  (Suporte para navegação em pilha)
+  (Implementa navegação em pilha com melhor desempenho nativo)
 
-- 6. React Navigation Bottom Tabs:
+- (6) Bottom Tabs Navigator:
 
   ```bash
   npm install @react-navigation/bottom-tabs
   ```
 
-  (Suporte para abas inferiores)
+  (Cria navegação com abas inferiores)
 
-- 7. React Navigation Drawer:
+- (7) Drawer Navigator:
 
   ```bash
   npm install @react-navigation/drawer
   ```
 
-  (Suporte para navegação em gaveta)
+  (Implementa navegação lateral tipo "gaveta")
 
-- 8. React Native Screens:
+- (8) React Native Screens:
 
   ```bash
   npm install react-native-screens
   ```
 
-  (Biblioteca para melhorar a performance de telas)
+  (Melhora a performance gerenciando a renderização de telas nativamente)
 
-- 9. React Native Safe Area Context:
+- (9) Safe Area Context:
 
   ```bash
   npm install react-native-safe-area-context
   ```
 
-  (Biblioteca para lidar com áreas seguras em dispositivos)
+  (Garante que o layout respeite as áreas seguras dos dispositivos)
 
-- 10. React Native Gesture Handler:
+- (10) Gesture Handler:
 
   ```bash
   npm install react-native-gesture-handler
   ```
 
-  (Biblioteca para lidar com gestos)
+  (Lida com gestos de toque de forma nativa)
 
-- 11. React Native Reanimated:
+- (11) Reanimated:
 
   ```bash
   npm install react-native-reanimated
   ```
 
-  (Biblioteca para animações avançadas)
+  (Animações com desempenho nativo e mais controle)
 
-- 12. React Native Masked View:
+- (12) Masked View:
 
   ```bash
   npm install @react-native-masked-view/masked-view
   ```
 
-  (Biblioteca para máscaras visuais)
+  (Suporte para aplicação de máscaras visuais em componentes)
 
-### Plugin Babel
+## Suporte a Caminhos e Fontes
 
-- 13. Babel Plugin Module Resolver:
+- (13) Babel Module Resolver:
 
   ```bash
   npm install --save-dev babel-plugin-module-resolver
   ```
 
-  (Plugin para caminhos absolutos nas importações)
+  (Permite importar arquivos usando caminhos absolutos)
 
-### Dependências de desenvolvimento e ferramentas adicionais
-
-- 14. Prettier:
-
-  ```bash
-  npm install prettier --save-dev
-  ```
-
-  (Ferramenta para formatação automática de código)
-
-- 15. React Native Dropdown Select List:
-
-  ```bash
-  npm install react-native-select-dropdown
-  ```
-
-  (Dropdown estilizado para React Native)
-
-- 16. Zustand:
-
-  ```bash
-  npm install zustand
-  ```
-
-  (Biblioteca de gerenciamento de estado leve e escalável para React.)
-
-- 17. Async Storage:
-
-  ```bash
-  npm install @react-native-async-storage/async-storage
-  ```
-
-  (Armazenamento persistente de dados em dispositivos móveis.)
-
-- 18. Expo Font:
+- (18) Expo Font:
 
   ```bash
   npm install expo-font
   ```
 
-  (Para uso de fontes .ttf)
+  (Carregamento de fontes customizadas (.ttf) com Expo)
 
-### Testes
+## Gerenciamento de Estado e UI
 
-- 19. React Test Renderer:
+- (15) Select Dropdown:
+
+  ```bash
+  npm install react-native-select-dropdown
+  ```
+
+  (Dropdown estilizado para listas de seleção)
+
+- (16) Zustand:
+
+  ```bash
+  npm install zustand
+  ```
+
+  (Gerenciamento de estado leve e escalável para React)
+
+- (17) Async Storage:
+
+  ```bash
+  npm install @react-native-async-storage/async-storage
+  ```
+
+  (Armazenamento local e persistente de dados)
+
+## Formatação e Qualidade de Código
+
+- (14) Prettier:
+
+  ```bash
+  npm install prettier --save-dev
+  ```
+
+  (Formatação automática e padronização de estilo de código)
+
+## Testes
+
+- (19) React Test Renderer:
 
   ```bash
   npm install --save-dev react-test-renderer@18.3.1
   ```
 
-  (Renderiza componentes React em memória para testes)
+  (Renderiza componentes em memória para testes unitários)
 
-- 20. Testing Library - React Native:
+- (20) Testing Library - React Native:
 
   ```bash
   npm install --save-dev @testing-library/react-native
   ```
 
-  (Permite escrever testes que simulam interações do usuário)
+  (Escreve testes simulando interações reais do usuário)
 
-- 21. Jest Expo:
+- (21) Jest Expo:
 
   ```bash
   npm install --save-dev jest-expo
   ```
 
-  (Configura automaticamente o Jest para rodar com Expo)
+  (Integra o Jest com projetos Expo)
 
-- 22. Testing Library - Jest Native:
+- (22) Testing Library - Jest Native:
 
   ```bash
   npm install --save-dev @testing-library/jest-native
   ```
 
-  (Acrescenta métodos úteis (matchers) para testes mais intuitivos com Jest)
+  (Expande os matchers do Jest para testes mais legíveis)
 
-- 23. Types Jest:
+- (23) Types Jest:
 
   ```bash
   npm install --save-dev @types/jest
   ```
 
-  (Descrição)
+  (Tipos TypeScript para Jest)
 
-###### API
+## Integração com APIs
 
-- 24. Axios:
+- (24) Axios:
 
   ```bash
   npm install axios
   ```
 
-  (Descrição)
+  (Cliente HTTP para requisições REST)
 
-- 25. Axios Retry:
+- (25) Axios Retry:
 
   ```bash
   npm install axios-retry
   ```
 
-  (Descrição)
+  (Middleware para tentativas automáticas com Axios)
 
-###### exemplo
+### Exemplo
 
-- 99. Nome:
+- (99) Nome:
 
   ```bash
   código
