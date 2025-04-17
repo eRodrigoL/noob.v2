@@ -8,6 +8,8 @@ import RootNavigator from "@/navigation/RootNavigator";
 // Importa o cliente Axios com a base da API
 import api from "@/api/apiClient";
 
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+
 // Define e exporta o componente principal do aplicativo chamado App
 export default function App() {
   // Carrega fontes personalizadas (registradas com os mesmos nomes usados em typography.ts)
@@ -38,5 +40,11 @@ export default function App() {
 
   // A função App retorna o componente RootNavigator
   // O RootNavigator provavelmente contém a lógica de navegação principal do aplicativo
-  return <RootNavigator />;
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <RootNavigator />
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
 }
