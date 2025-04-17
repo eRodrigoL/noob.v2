@@ -17,11 +17,13 @@
       // Componentes
       "@components/*": ["components/*"],
 
+      // Imagens
+      "@images": ["utils/constants/images.ts"],
+      "@image/*": ["../assets/images/*"],
+
       // Estilos
-      "@global": ["theme/globalStyles.ts"],
-      "@theme": ["theme/theme.ts"],
-      "@typography": ["theme/typography.ts"],
-      "@useTheme": ["hooks/useTheme.ts"],
+      "@theme": ["theme"],
+      "@theme/*": ["theme/*"],
       "@compStyles/*": ["theme/components/*"]
     },
     "types": ["jest", "@testing-library/jest-native"]

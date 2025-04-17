@@ -29,12 +29,13 @@ module.exports = function (api) {
             // Componentes
             "@components/*": "./src/components/*",
 
+            // Imagens
+            "@images": "./src/utils/constants/images.ts",
+            "@image/*": "../assets/images/*",
+
             // Estilo
-            "@compStyles": "./src/theme/components",
-            "@globalStyles": "./src/theme/globalStyles.ts",
-            "@theme": "./src/theme/theme.ts",
-            "@typography": "./src/theme/typography.ts",
-            "@useTheme": "./src/hooks/useTheme.ts",
+            "@theme": "./src/theme",
+            "@theme/*": "./src/theme/*",
             "@compStyles/*": "./src/theme/components/*",
           },
         },

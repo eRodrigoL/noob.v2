@@ -17,7 +17,7 @@ import Animated, {
   useSharedValue,
 } from "react-native-reanimated";
 import * as ImagePicker from "expo-image-picker"; // Para permitir a seleção de imagens da galeria do dispositivo
-import { images } from "@/utils/constants/images";
+import { images } from "@images";
 import { useTheme, globalStyles } from "@theme";
 
 // Obtém as dimensões da tela e define valores constantes para o cabeçalho e cobertura da página

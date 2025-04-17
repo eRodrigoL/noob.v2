@@ -1,8 +1,7 @@
 import React from "react"; // Importa React para criar componentes
 import { TouchableOpacity, Text } from "react-native"; // Importa componentes básicos do React Native
 
-import globalStyles from "@/theme/globalStyles"; // Importa estilos globais definidos no projeto
-import { useTheme } from "@/hooks/useTheme"; // Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
+import { useTheme, globalStyles } from "@theme"; // Importa temas e estilos
 
 interface ButtonProps {
   title: string;
