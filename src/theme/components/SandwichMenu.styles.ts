@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 // Estilos específicos para o menu lateral (não dependem de tema)
-export const headerMenuStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
     justifyContent: "flex-start",
@@ -18,3 +18,5 @@ export const headerMenuStyles = StyleSheet.create({
     marginTop: 20,
   },
 });
+
+export default styles;

@@ -219,6 +219,14 @@ Abaixo, a lista dos comandos utilizados para instalar as bibliotecas, pacotes, p
 
   (Middleware para tentativas automáticas com Axios)
 
+- (26) Expo Image Picker:
+
+  ```bash
+  npx expo install expo-image-picker
+  ```
+
+  (Seleção de imagem do dispositivo)
+
 ### Exemplo
 
 - (99) Nome:

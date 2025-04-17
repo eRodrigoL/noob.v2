@@ -17,6 +17,10 @@
       // Componentes
       "@components/*": ["components/*"],
 
+      // Imagens
+      "@images": ["utils/constants/images.ts"],
+      "@image/*": ["../assets/images/*"],
+
       // Estilos
       "@theme": ["theme"],
       "@theme/*": ["theme/*"],

@@ -14,7 +14,7 @@ import { useNavigation, NavigationProp } from "@react-navigation/native";
 import { RootStackParamList } from "@/navigation/RootNavigator";
 
 import api from "@/api/apiClient"; // Substitui axios direto
-import { headerMenuStyles } from "@compStyles/SandwichMenu.styles"; // Estilos específicos
+import styles from "@compStyles/SandwichMenu.styles"; // Estilos específicos
 import ButtonHighlight from "@components/ButtonHighlight";
 import axios from "axios";
 import { useTheme } from "@theme"; // Importa temas
@@ -122,18 +122,18 @@ const SandwichMenu: React.FC<ModalProps> = ({ visible, onClose }) => {
   return (
     <Modal transparent visible={visible} onRequestClose={onClose}>
       <TouchableWithoutFeedback onPress={onClose}>
-        <View style={headerMenuStyles.modalContainer}>
+        <View style={styles.modalContainer}>
           <TouchableWithoutFeedback>
             <Animated.View
               style={[
-                headerMenuStyles.modalView,
+                styles.modalView,
                 {
                   transform: [{ translateX: slideAnim }],
                   backgroundColor: colors.backgroundSemiHighlight,
                 },
               ]}
             >
-              <View style={headerMenuStyles.buttonContainer}>
+              <View style={styles.buttonContainer}>
                 {/* Início leva para TestScreen temporariamente */}
                 <ButtonHighlight
                   title="Início"

@@ -29,6 +29,10 @@ module.exports = function (api) {
             // Componentes
             "@components/*": "./src/components/*",
 
+            // Imagens
+            "@images": "./src/utils/constants/images.ts",
+            "@image/*": "../assets/images/*",
+
             // Estilo
             "@theme": "./src/theme",
             "@theme/*": "./src/theme/*",

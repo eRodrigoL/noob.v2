@@ -15,13 +15,12 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [x] Arial.ttf
     │   │   ├── [x] Roboto.ttf
     │   │   └── [x] Times New Roman.ttf
-    │   └── 📂 [ ] images/ # arquivos de fontes
+    │   └── 📂 [x] images/ # arquivos de fontes
     │       ├── 📂 [ ] icons/
     │       │   └── [ ] icon.png
     │       ├── 📂 [ ] lottie/
-    │       ├── [ ] splash.png
-    │       ├── [ ] SpaceMono-Regular.ttf
-    │       └── [ ] Times New Roman.ttf
+    │       ├── [x] unavailable.png
+    │       └── [x] userCover.png
     ├── 📂 [x] documentation/ # documentação.
     │   ├── 📂 [ ] docs/
     │   │   ├── [x] commit-guidelines.md
@@ -44,9 +43,11 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── [ ] Input.tsx
     │   │   ├── [ ] Loading.tsx
     │   │   ├── [ ] Modal.tsx
-    │   │   ├── [ ] ParallaxProfile.tsx
+    │   │   ├── [x] ParallaxProfile.tsx
     │   │   ├── [x] SandwichMenu.tsx
     │   │   └── [ ] ThemeToggle.tsx
+    │   ├── 📂 [x] constants/
+    │   │   └── [x] images.ts
     │   ├── 📂 [x] hooks/ # Hooks personalizados
     │   │   ├── [ ] useAuth.ts
     │   │   ├── [ ] useGames.ts
@@ -84,7 +85,7 @@ A estrutura do projeto é dividida em pastas que representam diferentes categori
     │   │   ├── 📂 [x] components
     │   │   │   ├── [x] Header.styles.ts
     │   │   │   └── [x] SandwichMenu.styles.ts
-    │   │   ├── 📂 [x] global
+    │   │   ├── 📂 [x] global/
     │   │   │   ├── [x] globalStyles.ts
     │   │   │   ├── [x] theme.ts
     │   │   │   └── [x] typography.ts
