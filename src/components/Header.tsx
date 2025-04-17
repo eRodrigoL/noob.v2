@@ -5,10 +5,10 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { useTheme } from "@/hooks/useTheme";
 import SandwichMenu from "@components/SandwichMenu";
 import api from "@/api/apiClient"; // Instância do Axios com baseURL
 import styles from "@compStyles/Header.styles";
+import { useTheme } from "@theme"; // Importa temas, cores e estilos
 
 interface HeaderProps {
   title: string;

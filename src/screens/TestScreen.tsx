@@ -5,8 +5,7 @@ import { View, Text, TouchableOpacity } from "react-native"; // Importa componen
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "@/navigation/RootNavigator";
 
-import globalStyles from "@global"; // Importa estilos globais definidos no projeto
-import { useTheme } from "@useTheme"; // Importa o hook personalizado useTheme, que fornece tema e tipografia globalmente
+import { useTheme, globalStyles } from "@theme";
 
 import Header from "@components/Header"; // Componente cabeçalho
 
