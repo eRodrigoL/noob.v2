@@ -1,6 +1,7 @@
 import axios from "axios";
 import axiosRetry from "axios-retry";
 import Constants from "expo-constants";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Verifica a URL da API nas variáveis de ambiente
 const baseURL = Constants.expoConfig?.extra?.API_BASE_URL;
@@ -26,12 +27,27 @@ axiosRetry(api, {
   // O ! diz ao TypeScript: “Se chegou até aqui, pode confiar que status existe.”
 });
 
+// Função utilitária para obter headers com autenticação
+export const getAuthHeaders = async () => {
+  const token = await AsyncStorage.getItem("token");
+  return {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+};
+
 export default api;
 
 /*
-// Exemplo de importação
-import api from "@/api/apiClient";
+🔎 Exemplo de uso:
 
-// Exemplo de requisição GET
-const response = await api.get("usuarios");
+import api, { getAuthHeaders } from "@/api/apiClient";
+
+// 🔓 Requisição pública (sem autenticação)
+const responsePublic = await api.get("jogos");
+
+// 🔐 Requisição privada (com autenticação)
+const config = await getAuthHeaders();
+const responsePrivate = await api.get("usuarios", config);
 */

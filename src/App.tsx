@@ -22,13 +22,13 @@ export default function App() {
   // 🔁 UseEffect para despertar e manter a API acordada
   useEffect(() => {
     // Primeira chamada: "acorda" a API assim que o app abre
-    api.get("usuarios").catch(() => {
+    api.get("jogos").catch(() => {
       console.log("❌ Falha ao despertar API");
     });
 
     // Intervalo para manter a API acordada a cada 4 minutos (240000ms)
     const interval = setInterval(() => {
-      api.get("usuarios").catch(() => {});
+      api.get("jogos").catch(() => {});
     }, 240000);
 
     // Limpa o intervalo quando o app for encerrado
