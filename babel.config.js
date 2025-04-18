@@ -27,16 +27,16 @@ module.exports = function (api) {
             "@screens": "./src/screens",
 
             // Componentes
-            "@components/*": "./src/components/*",
+            "@components": "./src/components",
 
             // Imagens
             "@images": "./src/utils/constants/images.ts",
-            "@image/*": "../assets/images/*",
+            "@image": "./assets/images",
 
             // Estilo
             "@theme": "./src/theme",
-            "@theme/*": "./src/theme/*",
-            "@compStyles/*": "./src/theme/components/*",
+            "@theme": "./src/theme",
+            "@compStyles": "./src/theme/components",
           },
         },
       ],
