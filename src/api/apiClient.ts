@@ -1,9 +1,17 @@
 import axios from "axios";
 import axiosRetry from "axios-retry";
+import Constants from "expo-constants";
+
+// Verifica a URL da API nas variáveis de ambiente
+const baseURL = Constants.expoConfig?.extra?.API_BASE_URL;
+
+if (!baseURL) {
+  throw new Error("❌ A variável de ambiente API_BASE_URL não foi definida.");
+}
 
 // Cria instância Axios com base da API
 const api = axios.create({
-  baseURL: "https://noob-api-1.onrender.com/api/",
+  baseURL,
   timeout: 10000, // tempo limite de resposta (10s)
 });
 
